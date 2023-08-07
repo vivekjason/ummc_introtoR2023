@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "An Introduction to R!"
+  description: "Workshop website for UMMC Research Carnival Workshop 2023"
+  navbar:
+    right:
+      - text: "Home"
+        file: index.qmd
+      - text: "Lectures"
+        menu:
+        - text: "Introduction to the Tidyverse for Data wrangling"
+          href: session1_wranggling.qmd
+        - text: "Data Visualisation using ggplot2"
+          href: session2_visualisation.qmd
+        - text: "Taking a R!de"
+          href: session3_tutorials.qmd
+      - icon: github
+        href: https://github.com/vivekjason
+      - icon: twitter
+        href: https://twitter.com/vivekjason87
+      - icon: rss
+        href: index.xml
+    
+format:
+  html:
+    theme: materia
+    css: styles.css
+    toc: true
+
+editor: visual
+
+
